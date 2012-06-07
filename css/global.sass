@@ -1,0 +1,135 @@
+@font-face
+  font-family: 'Philosopher'
+  font-style: normal
+  font-weight: normal
+  src: local('Philosopher Bold'), local('Philosopher-Bold'), url('Philosopher.woff') format('woff')
+  
+@font-face
+  font-family: 'Philosopher'
+  font-style: normal
+  font-weight: bold
+  src: local('Philosopher Bold'), local('Philosopher-Bold'), url('Philosopher-Bold.woff') format('woff')
+
+body
+  background-color: #EEE
+  color: #666
+  font: normal 12px/1.5 Helvetica,Verdana,Arial,sans-serif
+
+a
+  text-decoration: none
+
+.clearfix:after
+  clear: both
+  content: ""
+  display: block
+  height: 0
+  visibility: hidden
+#page
+  width: 960px
+  margin: 0 auto
+#index
+  height: 600px
+  font: 700 5em/1.5 'Philosopher', sans-serif
+  margin: 10px 0
+  position: relative
+  header
+    width: 590px
+    height: 140px
+    background-color: #ccc
+    -moz-transform-origin: 0% 0%
+    -moz-transform: rotate(90deg)
+    position: absolute
+    top: 0
+    left: 140px
+    font-size: 2em
+    line-height: 140px
+  nav
+    position: absolute
+    top: 0
+    right: 0
+    width: 820px
+  .nav-box
+    float: left
+    width: 400px
+    height: 290px
+    margin: 0 0 10px 10px
+    background-color: #666
+    position: relative
+    a
+      color: #FFF
+      position: absolute
+      bottom: 0
+      right: 10px
+
+#about
+  margin: 10px 0
+#timeline
+  float: left
+  width: 200px
+  height: 780px
+  background-color: #666
+#profile
+  float: right
+  width: 760px
+  div
+    float: left
+    margin: 0 0 10px 10px
+    padding: 20px
+    font: 400 14px/1.5 'Philosopher', sans-serif
+    background-color: #ccc
+    span
+      font-size: 2em
+#portfolio
+  margin: 10px 0
+  header
+    background-color: #999
+    h2
+      display: block
+      float: left
+      width: 300px
+      height: 80px
+      text-align: center
+      font: 700 50px/80px 'Philosopher', sans-serif
+      background-color: #CCC
+    nav
+      float: left
+#portfolio-nav
+  div
+    padding: 8px 0 8px 20px
+    >a
+      font: 400 16px/1.5 'Philosopher', sans-serif
+      display: inline-block
+      margin-right: 20px
+    >ul
+      display: inline-block
+      >li
+        display: inline-block
+        margin-right: 10px
+        font: 400 14px/1.5 'Philosopher', sans-serif
+.works-intro
+  display: block
+  float: left
+  width: 260px
+  background-color: #CCC
+  padding: 20px
+.works-wrapper
+  float: right
+  width: 660px
+  background-color: #DDD
+  margin-top: 10px
+  .work-box
+    float: left
+    background-color: #ccc
+    width: 320px
+    height: 240px
+    margin: 0 0 10px 10px
+    position: relative
+    a
+      position: absolute
+      display: block
+      bottom: 10px
+      right: 0
+      background-color: #666
+      color: #FFF
+      font: 400 16px/1.5 'Philosopher', sans-serif
+      padding: 10px
