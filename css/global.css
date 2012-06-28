@@ -75,30 +75,10 @@ h2 {
 #portfolio {
   margin: 10px 0; }
   #portfolio header {
-    background-color: #999999; }
+    background-color: #999999;
+    margin: 10px 0; }
     #portfolio header h2 {
-      display: block;
-      float: right;
-      width: 260px;
-      height: 80px;
-      padding: 0 20px;
-      line-height: 80px;
-      background-color: #cccccc; }
-    #portfolio header nav {
-      float: left; }
-
-#portfolio-nav div {
-  padding: 8px 0 8px 20px; }
-  #portfolio-nav div > a {
-    font: 400 16px/1.5 "Philosopher", sans-serif;
-    display: inline-block;
-    margin-right: 20px; }
-  #portfolio-nav div > ul {
-    display: inline-block; }
-    #portfolio-nav div > ul > li {
-      display: inline-block;
-      margin-right: 10px;
-      font: 400 14px/1.5 "Philosopher", sans-serif; }
+      text-align: center; }
 
 .works-intro {
   display: block;
@@ -107,27 +87,23 @@ h2 {
   background-color: #cccccc;
   padding: 20px; }
 
-.works-wrapper {
-  float: right;
-  width: 660px;
-  background-color: #dddddd;
-  margin-top: 10px; }
-  .works-wrapper .work-box {
-    float: left;
-    background-color: #cccccc;
-    width: 320px;
-    height: 240px;
-    margin: 0 10px 10px 0;
-    position: relative; }
-    .works-wrapper .work-box a {
-      position: absolute;
-      display: block;
-      bottom: 10px;
-      right: 0;
-      background-color: #666666;
-      color: white;
-      font: 400 16px/1.5 "Philosopher", sans-serif;
-      padding: 10px; }
+.work-box {
+  float: left;
+  background-color: #cccccc;
+  width: 240px;
+  height: 240px;
+  position: relative; }
+  .work-box a {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    background-color: #666666;
+    color: white;
+    font: 400 16px/1.5 "Philosopher", sans-serif;
+    padding: 10px; }
+
+.design-works .work-box a {
+  right: 0; }
 
 #contact {
   position: relative;
@@ -135,6 +111,7 @@ h2 {
   #contact header {
     position: absolute;
     top: 97px;
+    right: 0;
     width: 338px;
     height: 144px;
     background-color: #aaaaaa;

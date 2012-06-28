@@ -73,56 +73,32 @@ h2
   margin: 10px 0
   header
     background-color: #999
+    margin: 10px 0
     h2
-      display: block
-      float: right
-      width: 260px
-      height: 80px
-      padding: 0 20px
-      line-height: 80px
-      background-color: #CCC
-    nav
-      float: left
-#portfolio-nav
-  div
-    padding: 8px 0 8px 20px
-    >a
-      font: 400 16px/1.5 'Philosopher', sans-serif
-      display: inline-block
-      margin-right: 20px
-    >ul
-      display: inline-block
-      >li
-        display: inline-block
-        margin-right: 10px
-        font: 400 14px/1.5 'Philosopher', sans-serif
+      text-align: center
 .works-intro
   display: block
   float: right
   width: 260px
   background-color: #CCC
   padding: 20px
-.works-wrapper
-  float: right
-  width: 660px
-  background-color: #DDD
-  margin-top: 10px
-  .work-box
-    float: left
-    background-color: #ccc
-    width: 320px
-    height: 240px
-    margin: 0 10px 10px 0
-    position: relative
-    a
-      position: absolute
-      display: block
-      bottom: 10px
-      right: 0
-      background-color: #666
-      color: #FFF
-      font: 400 16px/1.5 'Philosopher', sans-serif
-      padding: 10px
+.work-box
+  float: left
+  background-color: #ccc
+  width: 240px
+  height: 240px
+  position: relative
+  a
+    position: absolute
+    display: block
+    bottom: 10px
+    background-color: #666
+    color: #FFF
+    font: 400 16px/1.5 'Philosopher', sans-serif
+    padding: 10px
+.design-works .work-box a
+  right: 0
+
 
 $l: 87px
 
@@ -132,6 +108,7 @@ $l: 87px
   header
     position: absolute
     top: $l+10px
+    right: 0
     width: 4*$l - 10px
     height: 2*$l - 30px
     background-color: #aaa 
