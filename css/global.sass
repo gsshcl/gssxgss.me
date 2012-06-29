@@ -10,6 +10,8 @@
   font-weight: bold
   src: local('Philosopher Bold'), local('Philosopher-Bold'), url('Philosopher-Bold.woff') format('woff')
 
+/* GLOBAL */
+
 body
   background-color: #EEE
   color: #666
@@ -28,9 +30,14 @@ h2
   display: block
   height: 0
   visibility: hidden
+.hidden
+  display: none
 #page
   width: 960px
   margin: 0 auto
+
+/* INDEX */
+
 #index
   font: 700 4em/1.5 'Philosopher', sans-serif
   margin: 10px 0
@@ -48,6 +55,8 @@ h2
       -moz-transform-origin: right bottom
       -moz-transform: rotate(-90deg)
 
+/*ABOUT*/
+
 #about
   margin: 10px 0
   header
@@ -57,6 +66,7 @@ h2
     background-color: #666
     h2
       color: #FFF
+
 #profile
   float: right
   width: 720px
@@ -68,6 +78,8 @@ h2
     background-color: #ccc
     span
       font-size: 2em
+
+/* portfolio */
 
 #portfolio
   margin: 10px 0
@@ -91,16 +103,21 @@ h2
   a
     position: absolute
     display: block
-    bottom: 10px
     background-color: #666
     color: #FFF
     font: 400 16px/1.5 'Philosopher', sans-serif
     padding: 10px
+.web-works .work-box a
+  bottom: 10px
+  left: 0
 .design-works .work-box a
+  top: 10px
   right: 0
 
 
 $l: 87px
+
+/* contact */
 
 #contact
   position: relative
@@ -123,3 +140,38 @@ $l: 87px
     background-color: #DDD
     &:nth-child(10n+1)
       margin-right: 0
+
+/* carousel */
+
+.showcase-wrapper
+  position: relative
+  margin: 10px 0px
+#carousel-prev, #carousel-next
+  display: block
+  position: absolute
+  top: 150px
+  background-color: rgba(0, 0, 0, 0.5)
+  color: #FFF
+  font: 400 2em/1.5 'Philosopher', sans-serif
+#carousel-prev
+  left: 0
+#carousel-next
+  right: 0
+.showcase
+  width: 100%
+  height: 320px
+  background-color: #ddd
+  >a
+    display: block
+    float: left
+    width: 100px
+    height: 100px
+    background-color: #aaa
+.case-intro
+  height: 280px
+  width: 280px
+  float: left
+  padding: 20px
+  background-color: rgba(0, 0, 0, 0.5)
+  color: #FFF
+    
