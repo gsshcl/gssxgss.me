@@ -118,8 +118,7 @@ h2 {
 
 /* contact */
 #contact {
-  position: relative;
-  background-color: white; }
+  position: relative; }
   #contact header {
     position: absolute;
     top: 97px;
