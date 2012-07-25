@@ -12,12 +12,13 @@
 
 /* GLOBAL */
 body {
-  background-color: #eeeeee;
+  background-color: #f0f0f0;
   color: #666666;
   font: normal 12px/1.5 Helvetica, Verdana, Arial, sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #999999; }
 
 h2 {
   display: block;
@@ -33,27 +34,35 @@ h2 {
 .hidden {
   display: none; }
 
-#page {
+.page-width {
   width: 960px;
   margin: 0 auto; }
 
 /* INDEX */
 #index {
   font: 700 4em/1.5 "Philosopher", sans-serif;
-  margin: 10px 0; }
+  margin: 0 0 10px 0; }
   #index header {
-    background-color: #cccccc;
-    font-size: 3em;
-    padding: 0 20px; }
-  #index .nav-box {
-    float: left;
-    width: 25%;
-    height: 360px;
-    background-color: #666666; }
-    #index .nav-box a {
+    background-color: rgba(255, 255, 255, 0.8); }
+  #index #logo {
+    display: block;
+    width: 480px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 0 0 20px 20px; }
+    #index #logo a {
+      color: rgba(255, 255, 255, 0.5);
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+      font-size: 2em; }
+  #index nav {
+    margin-top: 20px; }
+    #index nav a {
       display: block;
-      -moz-transform-origin: right bottom;
-      -moz-transform: rotate(-90deg); }
+      float: left;
+      width: 25%;
+      text-align: center;
+      font-size: 36px; }
 
 /*ABOUT */
 #about {
@@ -62,7 +71,8 @@ h2 {
     float: left;
     width: 240px;
     height: 780px;
-    background-color: #666666; }
+    background-color: #666666;
+    border-radius: 0 20px 0 20px; }
     #about header h2 {
       color: white; }
 
@@ -74,7 +84,8 @@ h2 {
     margin: 0 0 10px 10px;
     padding: 20px;
     font: 400 14px/1.5 "Philosopher", sans-serif;
-    background-color: #cccccc; }
+    background-color: #cccccc;
+    border-radius: 20px 0 20px 0; }
     #profile div span {
       font-size: 2em; }
 
