@@ -132,8 +132,8 @@ h2 {
   position: relative; }
   #contact header {
     position: absolute;
-    top: 97px;
-    right: 0;
+    top: 0;
+    left: 290px;
     width: 338px;
     height: 144px;
     background-color: #aaaaaa;
@@ -145,7 +145,11 @@ h2 {
     height: 87px;
     float: left;
     margin: 0 10px 10px 0;
-    background-color: #dddddd; }
+    background-color: #dddddd;
+    opacity: 0;
+    -moz-transition: opacity 0.2s linear 0s; }
+    #contact div:hover {
+      opacity: 1; }
     #contact div:nth-child(10n+1) {
       margin-right: 0; }
 
