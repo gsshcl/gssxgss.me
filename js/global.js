@@ -1,9 +1,9 @@
 $(function(){
-  displayCarousel();  
+  displayCarousel(); 
+  fixHeight();
 });
 
-function displayCarousel(){
-	
+function displayCarousel(){	
   $('.thumbs').children().each(function(i) {
     $(this).addClass( 'item'+i );
 		$(this).children('a').click(function() {
@@ -35,4 +35,9 @@ function displayCarousel(){
       }
     }    
   });
+}
+
+function fixHeight(){
+  var fixedHeight = $('#profile').height() - parseInt($('#profile>div:first-child').css('margin-bottom'));
+  $('#about header').height(fixedHeight);
 }
