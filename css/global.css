@@ -45,8 +45,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.8); }
   #index header {
     background-position: center center;
-    background-repeat: no-repeat;
-    -moz-transition: all 1s linear 0s; }
+    background-repeat: no-repeat; }
   #index #logo {
     display: block;
     width: 480px;
@@ -79,10 +78,11 @@ h2 {
   #about header {
     float: left;
     width: 240px;
-    background-color: #666666;
+    background: url(../img/about.png) no-repeat bottom center;
     border-radius: 0 20px 0 20px; }
     #about header h2 {
-      color: white; }
+      color: #b79480;
+      text-shadow: 2px 2px 0 #f2de9f; }
 
 #profile {
   float: right;
@@ -141,25 +141,110 @@ h2 {
   #contact header {
     position: absolute;
     top: 0;
-    left: 290px;
-    width: 338px;
-    height: 144px;
-    background-color: #aaaaaa;
-    padding: 20px; }
+    left: 0;
+    width: 378px;
+    height: 378px;
+    margin: 77px 10px 10px 0;
+    border-radius: 0 50% 50% 50%;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: 50%;
+    background-color: rgba(102, 204, 255, 0.5); }
     #contact header h3 {
       font: 400 2em/1.5 "Philosopher", sans-serif; }
-  #contact div {
+  #contact .header-wrapper {
+    -moz-transform: rotate(-45deg);
+    -moz-transform-origin: 50%;
+    margin-top: 126px;
+    text-align: center;
+    color: white; }
+  #contact > div {
     width: 87px;
     height: 87px;
+    border-radius: 0 50% 50% 50%;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: 50%;
     float: left;
-    margin: 0 10px 10px 0;
-    background-color: #dddddd;
+    margin: 17px 10px 10px 0;
     opacity: 0;
-    -moz-transition: opacity 0.2s linear 0s; }
-    #contact div:hover {
-      opacity: 1; }
-    #contact div:nth-child(10n+1) {
+    -moz-transition: opacity 0.3s ease-out 0s; }
+    #contact > div:hover {
+      opacity: 0.5; }
+    #contact > div:nth-child(10n+2) {
       margin-right: 0; }
+    #contact > div:nth-child(6n) {
+      background-color: rgba(102, 204, 102, 0.5); }
+    #contact > div:nth-child(6n+1) {
+      background-color: rgba(255, 204, 102, 0.5); }
+    #contact > div:nth-child(6n+2) {
+      background-color: rgba(255, 153, 153, 0.5); }
+    #contact > div:nth-child(6n+3) {
+      background-color: rgba(204, 255, 51, 0.5); }
+    #contact > div:nth-child(6n+4) {
+      background-color: rgba(255, 153, 204, 0.5); }
+    #contact > div:nth-child(6n+5) {
+      background-color: rgba(51, 153, 255, 0.5); }
+
+.contact-block {
+  opacity: 0;
+  width: 87px;
+  height: 87px;
+  border-radius: 0 50% 50% 50%;
+  -moz-transform: rotate(45deg);
+  -moz-transform-origin: 50%;
+  position: absolute;
+  background-color: rgba(102, 204, 204, 0.5);
+  color: #eeeeee;
+  -moz-transition: all 0.3s ease-in 0s; }
+  .contact-block:hover {
+    width: 97px;
+    height: 97px;
+    margin-left: -5px;
+    margin-top: -5px; }
+
+/* contact icons */
+.gmail {
+  top: 17px;
+  left: 0; }
+
+.twitter {
+  top: 359px;
+  left: 291px; }
+
+.facebook {
+  top: 473px;
+  left: 0; }
+
+.instagram {
+  top: 131px;
+  left: 776px; }
+
+.flickr {
+  top: 473px;
+  left: 679px; }
+
+.google-plus {
+  top: 587px;
+  left: 388px; }
+
+.douban {
+  top: 701px;
+  left: 194px; }
+
+.bangumi {
+  top: 245px;
+  left: 485px; }
+
+.pixiv {
+  top: 131px;
+  left: 388px; }
+
+.lastfm {
+  top: 17px;
+  left: 582px; }
+
+.linkedin {
+  top: 701px;
+  left: 582px; }
 
 /* carousel */
 .showcase-wrapper {

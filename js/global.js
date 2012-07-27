@@ -1,8 +1,10 @@
 $(function(){
   displayCarousel(); 
   fixHeight();
+  showContactBlock()
 });
 
+// display the carousel
 function displayCarousel(){	
   $('.thumbs').children().each(function(i) {
     $(this).addClass( 'item'+i );
@@ -37,7 +39,17 @@ function displayCarousel(){
   });
 }
 
+// fix the height of #about>header
 function fixHeight(){
   var fixedHeight = $('#profile').height() - parseInt($('#profile>div:first-child').css('margin-bottom'));
   $('#about header').height(fixedHeight);
+}
+
+// show raindrops that has contact infomations
+function showContactBlock(){
+  $('.contact-block').mouseover(function(){
+    if($(this).css('opacity') === '0'){
+      $(this).css('opacity', '1');
+    }
+  });
 }
